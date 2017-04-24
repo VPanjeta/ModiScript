@@ -266,7 +266,7 @@ class Parser:
                     op = Lt(**self._debug_details(num))
                 elif lexeme['lex'] == LEX['<']:
                     op = Gt(**self._debug_details(num))
-            op = Compare(left=prev, ops=[op], comparators=[node], **self._debug_details(prev))
+            op = Compare(left=prev, ops=[op], comparators=[node], **self._debug_details(num))
             if new_num + 1 < self.length and self.lex[new_num + 1]['lex'] == LEX['var'] and self.lex[new_num + 1]['value'] == 'nahi':
                 new_num += 1
                 op = UnaryOp(op=Not(), operand=op, **self._debug_details(new_num))
@@ -292,7 +292,7 @@ class Parser:
                 op = Eq(**self._debug_details(new_num))
             elif lexeme['lex'] == LEX['!=']:
                 op = NotEq(**self._debug_details(new_num))
-            op = Compare(left=prev, ops=[op], comparators=[node], **self._debug_details(prev))
+            op = Compare(left=prev, ops=[op], comparators=[node], **self._debug_details(num))
             if new_num + 1 < self.length and self.lex[new_num + 1]['lex'] == LEX['var'] and self.lex[new_num + 1]['value'] == 'nahi':
                 new_num += 1
                 op = UnaryOp(op=Not(), operand=op, **self._debug_details(new_num))
