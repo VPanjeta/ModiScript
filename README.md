@@ -4,7 +4,7 @@ Acche din aa gaye
 A Programming language is a wonderful medium of communication between man and machine. Many such languages are created, keeping in mind the comfort of the programmer. Such languages fulfill the computational needs of the world and serve their purpose. Somewhere in the midst of all this, the “fun” side of programming is lost. <br/>
 Our project, “Modi Script” is one such esoteric language created with the sole intention of parodying our beloved PM Narendra Modi. The star feature of this language is that the language consists entirely of remarkable statements made by the PM. The language is  dynamically typed and  turing complete, sprinkled with words of wisdom by our PM! <br/>
 
-##Features
+## Features
 This scripting languague includes some of the most importnt ideologies of Shri Narendra Modi. <br/>
 * No import of codes allowed, we have to suppoprt him in Make in India.<br/>
 * No comments allowed in code, eveyrhting should be clean as per Swachh Bharat Abhiyaan. <br/>
@@ -13,7 +13,7 @@ This scripting languague includes some of the most importnt ideologies of Shri N
 * All codes should end with <strong>acche din aa gaye</strong>, otherwise it's congress rule error.<br/>
 * you can provide --help flag for very discreet help.
 
-##Installation
+## Installation
 To install, download the repo using: <br/>
 ```bash
 git clone https://github.com/VPanjeta/ModiScript
@@ -25,11 +25,11 @@ And then type
 ```bash
 source ~/.bashrc
 ```
-##Execution
+## Execution
 Write code in file with extension <strong>.chai</strong><br/>
 For execution type MODI filename.chai <br/>
 
-##Syntax and Grammar
+## Syntax and Grammar
 Arithmetic, relational and logical operators can be used in their raw form as defined in c/c++ (i.e. '+' for addition '-' for subtraction '&&' for logocal and '||' for logical or and so on..) <br/>
 <strong>Modi-fied operators</strong><br/>
 * `sach` for True <br/>
@@ -45,7 +45,7 @@ Arithmetic, relational and logical operators can be used in their raw form as de
 * `aur` for logical AND <br/>
 * `ya` for logocal OR <br/>
 
-#Flow of Control
+# Flow of Control
 *<strong> { } </strong> define a block as in any other programming language. <br/>
 * if is defined as <strong>agar</strong> and else as <strong>nahi toh</strong>. if else ladder can be defined as <strong>agar (condition) { } nahi toh agar (condition) { } nahi toh{ }</strong>.
 * Looping constructs can be defined using <strong>jab tak condition hai { } </strong> (be careful here, we have been going according to hindi grammar that dictates the loop will exit when the condition is true, thus the loop executes till the condition is false not true) <br/>
@@ -60,7 +60,7 @@ Arithmetic, relational and logical operators can be used in their raw form as de
 <br/>
 <strong>Example codes can be found in `/example`.</strong>
 
-#Creators
+# Creators
 Ideas and Contributions for alpha version implemented by <br/>
 * Vishal Panjeta [@VPanjeta](https://vpanjeta.github.io) <br/>
 * Tilak S Naik [@TilakSN](https://github.com/TilakSN) <br/>
