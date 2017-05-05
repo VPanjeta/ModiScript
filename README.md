@@ -7,10 +7,11 @@ Our project, “Modi Script” is one such esoteric language created with the so
 ## Features
 This scripting languague includes some of the most importnt ideologies of Shri Narendra Modi. <br/>
 * No import of codes allowed, we have to suppoprt him in Make in India.<br/>
-* No comments allowed in code, eveyrhting should be clean as per Swachh Bharat Abhiyaan. <br/>
+* No comments allowed in code, everything should be clean as per Swachh Bharat Abhiyaan. <br/>
 * No redundant variables allowed, less government more governance. <br/>
 * Like his speeches, all codes should start with <strong>mitrooon</strong> <br/>
 * All codes should end with <strong>acche din aa gaye</strong>, otherwise it's congress rule error.<br/>
+* The programming language is totally case insensitive, because we should not believe discrimination based on higher or lower castes/cases. <br/>
 * you can provide --help flag for very discreet help.
 
 ## Installation
@@ -58,6 +59,17 @@ Arithmetic, relational and logical operators can be used in their raw form as de
 * Input from STDIN can be takes using <strong>mann ki baat</strong>. mann ki baat RSS will take input into a variable named RSS. <br/>
 * Any excessive words defined in a line outside the scope of any operators or syntax will be neglected so you can write pure hindi codes and make them grammatically correct and give a pure Hindi Code demo in UN Assembly. <br/>  
 <br/>
+## Example Code
+Mitrooon <br/>
+agar baat sach hai <br/>
+	bhaiyo aur behno "Modi sabse achhe pradhan mantri hai." <br/>
+nahi toh <br/>
+	bhaiyo aur behno "Rahul Gandhi ko PM banaiye" <br/>
+Achhe din aa gaye <br/>
+<br/>
+<strong>Output:</strong>
+`modi sabse achhe pradhan mantri hai.`
+
 <strong>Example codes can be found in `/example`.</strong>
 
 # Creators
