@@ -69,10 +69,8 @@ nahi toh
 Achhe din aa gaye 
 ```
 <br/>
-## Output
-```
-modi sabse achhe pradhan mantri hai.
-```
+<strong>Output:</strong>
+"modi sabse achhe pradhan mantri hai."
 
 <strong>Example codes can be found in `/example`.</strong>
 
