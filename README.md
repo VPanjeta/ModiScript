@@ -69,7 +69,7 @@ nahi toh
 Achhe din aa gaye 
 ```
 <br/>
-<strong>Output:</strong>
+## Output
 ```
 modi sabse achhe pradhan mantri hai.
 ```
