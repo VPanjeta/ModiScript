@@ -46,7 +46,7 @@ Arithmetic, relational and logical operators can be used in their raw form as de
 * `aur` for logical AND <br/>
 * `ya` for logocal OR <br/>
 
-# Flow of Control
+## Flow of Control
 * <strong> { } </strong> define a block as in any other programming language. <br/>
 * if is defined as <strong>agar</strong> and else as <strong>nahi toh</strong>. if else ladder can be defined as <strong>agar (condition) { } nahi toh agar (condition) { } nahi toh{ }</strong>.
 * Looping constructs can be defined using <strong>jab tak condition hai { } </strong> (be careful here, we have been going according to hindi grammar that dictates the loop will exit when the condition is true, thus the loop executes till the condition is false not true) <br/>
@@ -59,7 +59,7 @@ Arithmetic, relational and logical operators can be used in their raw form as de
 * Input from STDIN can be takes using <strong>mann ki baat</strong>. mann ki baat RSS will take input into a variable named RSS. <br/>
 * Any excessive words defined in a line outside the scope of any operators or syntax will be neglected so you can write pure hindi codes and make them grammatically correct and give a pure Hindi Code demo in UN Assembly. <br/>  
 <br/>
-## Example Code
+## Example Code <br/>
 Mitrooon <br/>
 agar baat sach hai <br/>
 	bhaiyo aur behno "Modi sabse achhe pradhan mantri hai." <br/>
