@@ -61,16 +61,18 @@ Arithmetic, relational and logical operators can be used in their raw form as de
 
 ## Example Code
 ```
-Mitrooon <br/>
-agar baat sach hai <br/>
-	bhaiyo aur behno "Modi sabse achhe pradhan mantri hai." <br/>
-nahi toh <br/>
-	bhaiyo aur behno "Rahul Gandhi ko PM banaiye" <br/>
-Achhe din aa gaye <br/>
+Mitrooon
+agar baat sach hai
+	bhaiyo aur behno "Modi sabse achhe pradhan mantri hai." 
+nahi toh 
+	bhaiyo aur behno "Rahul Gandhi ko PM banaiye" 
+Achhe din aa gaye 
 ```
 <br/>
 <strong>Output:</strong>
-`modi sabse achhe pradhan mantri hai.`
+```
+modi sabse achhe pradhan mantri hai.
+```
 
 <strong>Example codes can be found in `/example`.</strong>
 
