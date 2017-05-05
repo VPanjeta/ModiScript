@@ -58,14 +58,16 @@ Arithmetic, relational and logical operators can be used in their raw form as de
 * Output to STDOUT can be given using <strong>bhaiyo aur behno</strong>. bhaiyo aur behno "Hum UP me sarkaar bana chuke hai." will print "Hum UP me sarkaar bana chuke hai." <br/>
 * Input from STDIN can be takes using <strong>mann ki baat</strong>. mann ki baat RSS will take input into a variable named RSS. <br/>
 * Any excessive words defined in a line outside the scope of any operators or syntax will be neglected so you can write pure hindi codes and make them grammatically correct and give a pure Hindi Code demo in UN Assembly. <br/>  
-<br/>
-## Example Code <br/>
+
+## Example Code
+```
 Mitrooon <br/>
 agar baat sach hai <br/>
 	bhaiyo aur behno "Modi sabse achhe pradhan mantri hai." <br/>
 nahi toh <br/>
 	bhaiyo aur behno "Rahul Gandhi ko PM banaiye" <br/>
 Achhe din aa gaye <br/>
+```
 <br/>
 <strong>Output:</strong>
 `modi sabse achhe pradhan mantri hai.`
