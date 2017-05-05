@@ -58,4 +58,10 @@ Arithmetic, relational and logical operators can be used in their raw form as de
 * Input from STDIN can be takes using <strong>mann ki baat</strong>. mann ki baat RSS will take input into a variable named RSS. <br/>
 * Any excessive words defined in a line outside the scope of any operators or syntax will be neglected so you can write pure hindi codes and make them grammatically correct and give a pure Hindi Code demo in UN Assembly. <br/>  
 <br/>
-<strong>Example codes can be found in example.</strong>
+<strong>Example codes can be found in `/example`.</strong>
+
+#Creators
+Ideas and Contributions for alpha version implemented by <br/>
+* Vishal Panjeta [@VPanjeta](https://vpanjeta.github.io) <br/>
+* Tilak S Naik [@TilakSN](https://github.com/TilakSN) <br/>
+* Shishira R Maiya [@abhyantrika](https://github.com/abhyantrika) <br/>
