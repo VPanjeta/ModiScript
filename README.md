@@ -46,7 +46,7 @@ Arithmetic, relational and logical operators can be used in their raw form as de
 * `ya` for logocal OR <br/>
 
 # Flow of Control
-*<strong> { } </strong> define a block as in any other programming language. <br/>
+* <strong> { } </strong> define a block as in any other programming language. <br/>
 * if is defined as <strong>agar</strong> and else as <strong>nahi toh</strong>. if else ladder can be defined as <strong>agar (condition) { } nahi toh agar (condition) { } nahi toh{ }</strong>.
 * Looping constructs can be defined using <strong>jab tak condition hai { } </strong> (be careful here, we have been going according to hindi grammar that dictates the loop will exit when the condition is true, thus the loop executes till the condition is false not true) <br/>
 
