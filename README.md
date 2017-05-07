@@ -5,7 +5,7 @@ A Programming language is a wonderful medium of communication between man and ma
 Our project, “Modi Script” is one such esoteric language created with the sole intention of parodying our beloved PM Narendra Modi. The star feature of this language is that the language consists entirely of remarkable statements made by the PM. The language is  dynamically typed and  turing complete, sprinkled with words of wisdom by our PM! <br/>
 
 ## Features
-This scripting languague includes some of the most importnt ideologies of Shri Narendra Modi. <br/>
+This scripting languague includes some of the most important ideologies of Shri Narendra Modi. <br/>
 * No import of codes allowed, we have to suppoprt him in Make in India.<br/>
 * No comments allowed in code, everything should be clean as per Swachh Bharat Abhiyaan. <br/>
 * No redundant variables allowed, less government more governance. <br/>
