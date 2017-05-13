@@ -12,6 +12,7 @@ This scripting languague includes some of the most important ideologies of Shri 
 * Like his speeches, all codes should start with <strong>mitrooon</strong> <br/>
 * All codes should end with <strong>acche din aa gaye</strong>, otherwise it's congress rule error.<br/>
 * The programming language is totally case insensitive, because we should not believe discrimination based on higher or lower castes/cases. <br/>
+* No floating point numbers allowed, you can either be right front or left front, there is no mid-way.<br/>
 * you can provide --help flag for very discreet help.
 
 ## Installation
