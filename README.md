@@ -5,8 +5,8 @@ A Programming language is a wonderful medium of communication between man and ma
 Our project, “Modi Script” is one such esoteric language created with the sole intention of making use of quotes by our beloved PM Narendra Modi. The star feature of this language is that the language consists entirely of remarkable statements made by the PM. The language is  dynamically typed and  turing complete, sprinkled with words of wisdom by our PM! <br/>
 
 ## Features
-This scripting languague includes some of the most important ideologies of Shri Narendra Modi. <br/>
-* No import of codes allowed, we have to suppoprt him in Make in India.<br/>
+This scripting languague includes some "ideas" of Shri Narendra Modi. <br/>
+* No import of codes allowed, we have to support him in Make in India.<br/>
 * No comments allowed in code, everything should be clean as per Swachh Bharat Abhiyaan. <br/>
 * No redundant variables allowed, less government more governance. <br/>
 * Like his speeches, all codes should start with <strong>mitrooon</strong> <br/>
@@ -14,6 +14,7 @@ This scripting languague includes some of the most important ideologies of Shri 
 * The programming language is totally case insensitive, because we should not believe discrimination based on higher or lower castes/cases. <br/>
 * No floating point numbers allowed, you can either be right front or left front, there is no mid-way.<br/>
 * you can provide --help flag for very discreet help.
+
 
 ## Installation
 To install, download the repo using: <br/>
@@ -80,3 +81,5 @@ Ideas and Contributions for alpha version implemented by <br/>
 * Vishal Panjeta [@VPanjeta](https://vpanjeta.github.io) <br/>
 * Tilak S Naik [@TilakSN](https://github.com/TilakSN) <br/>
 * Shishira R Maiya [@abhyantrika](https://github.com/abhyantrika) <br/>
+
+* You are welcome, if you feel the need to contribute. Just clone the repo and send a pull request!
