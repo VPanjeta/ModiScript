@@ -1,5 +1,6 @@
 from utils import *
 import re
+import sys
 
 mitrooon = re.compile(r'^mith?roo?o?n?$')
 acche = re.compile(r'^ac[ch]?hee?$')
@@ -192,4 +193,6 @@ class Lexer:
             yield Lexer.lexeme(*lex)
         self.stack = []
         self.clear = False
-        raise StopIteration
+        if sys.version_info >= (3,7):
+        	return
+        raise StopIteration()
