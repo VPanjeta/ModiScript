@@ -4,7 +4,7 @@ i 1 hai
 bhaiyo aur behno "ek nambar do"
 mann ki baat nambar
 agar nambar 0 se kam hai 
-	bhaiyo aur behno "0 ka factorial nai hota bhaiyo aur behno par mujhe sirf 50 din dijiye"
+	bhaiyo aur behno "nakaratmak sankhyao ka factorial nai hota bhaiyo aur behno par mujhe sirf 50 din dijiye"
 nahi toh {
 	jab tak i nambar se zyada hai {
 		factorial factorial taimes i hai
