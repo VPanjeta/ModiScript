@@ -1,5 +1,5 @@
 from ast import *
-from utils import *
+from utils import LEX, ErrorHandler, ERROR, CONGRESS_RULE
 
 
 class Parser:
@@ -122,7 +122,7 @@ class Parser:
         new_num, node = self._analyze_expr(num + 1)
         if node is not None:
             return new_num, Expr(value=Call(func=Name(id='print', ctx=Load()),
-                                     args=[node], keywords=[]), **self._debug_details(num))
+                                            args=[node], keywords=[]), **self._debug_details(num))
         return num + 1, None
 
     def _analyze_until(self, num):
@@ -267,7 +267,8 @@ class Parser:
                 elif lexeme['lex'] == LEX['<']:
                     op = Gt(**self._debug_details(num))
             op = Compare(left=prev, ops=[op], comparators=[node], **self._debug_details(num))
-            if new_num + 1 < self.length and self.lex[new_num + 1]['lex'] == LEX['var'] and self.lex[new_num + 1]['value'] == 'nahi':
+            if new_num + 1 < self.length and self.lex[new_num + 1]['lex'] == LEX['var'] and self.lex[new_num + 1][
+                'value'] == 'nahi':
                 new_num += 1
                 op = UnaryOp(op=Not(), operand=op, **self._debug_details(new_num))
             if new_num < self.length and self.lex[new_num]['lex'] == LEX['hai']:
@@ -293,7 +294,8 @@ class Parser:
             elif lexeme['lex'] == LEX['!=']:
                 op = NotEq(**self._debug_details(new_num))
             op = Compare(left=prev, ops=[op], comparators=[node], **self._debug_details(num))
-            if new_num + 1 < self.length and self.lex[new_num + 1]['lex'] == LEX['var'] and self.lex[new_num + 1]['value'] == 'nahi':
+            if new_num + 1 < self.length and self.lex[new_num + 1]['lex'] == LEX['var'] and self.lex[new_num + 1][
+                'value'] == 'nahi':
                 new_num += 1
                 op = UnaryOp(op=Not(), operand=op, **self._debug_details(new_num))
             if new_num + 1 < self.length and self.lex[new_num + 1]['lex'] == LEX['hai']:

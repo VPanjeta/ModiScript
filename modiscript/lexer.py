@@ -1,4 +1,4 @@
-from utils import *
+from utils import LEX, ErrorHandler, ERROR, CONGRESS_RULE, STARTING_TROUBLE, MISQUOTE, WORDS
 import re
 import sys
 
@@ -23,18 +23,8 @@ class Lexer:
 
     @staticmethod
     def normalize(word):
-        if word == 'nahin':
-            word = 'nahi'
-        elif word == 'tho':
-            word = 'toh'
-        elif word == 'bhayyo':
-            word = 'bhaiyo'
-        elif word == 'beheno':
-            word = 'behno'
-        elif word == 'thak':
-            word = 'tak'
-        elif word == 'jyada':
-            word = 'zyada'
+        if word in WORDS:
+            word = WORDS[word]
         elif mitrooon.search(word):
             word = 'mitrooon'
         elif acche.search(word):
@@ -193,6 +183,6 @@ class Lexer:
             yield Lexer.lexeme(*lex)
         self.stack = []
         self.clear = False
-        if sys.version_info >= (3,7):
-        	return
+        if sys.version_info >= (3, 7):
+            return
         raise StopIteration()
