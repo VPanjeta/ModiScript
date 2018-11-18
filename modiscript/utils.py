@@ -40,6 +40,15 @@ LEX = {
     'false': 105
 }
 
+WORDS = {
+    "nahin": "nahi",
+    "tho": "toh",
+    "bhayyo": "bhaiyo",
+    "beheno": "behno",
+    "thak": "tak",
+    "jyada": "zyada"
+}
+
 
 def usage():
     print("Usage:", PROGRAM, "[options]", "filename")
