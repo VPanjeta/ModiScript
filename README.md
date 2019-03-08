@@ -2,18 +2,18 @@
 Acche din aa gaye
 ## Vision 
 A Programming language is a wonderful medium of communication between man and machine. Many such languages are created, keeping in mind the comfort of the programmer. Such languages fulfill the computational needs of the world and serve their purpose. Somewhere in the midst of all this, the “fun” side of programming is lost. <br/>
-Our project, “Modi Script” is one such esoteric language created with the sole intention of making use of quotes by our beloved PM Narendra Modi. The star feature of this language is that the language consists entirely of remarkable statements made by the PM. The language is  dynamically typed and  turing complete, sprinkled with words of wisdom by our PM! <br/>
+Our project, “Modi Script” is one such esoteric language created with the sole intention of making use of quotes  by our beloved PM Narendra Modi. The star feature of this language is that the language consists entirely of remarkable statements made by the PM. The language is  dynamically typed and  turing complete, sprinkled with words of wisdom by our PM! <br/>
 
 ## Features
 This scripting languague includes some "ideas" of Shri Narendra Modi. <br/>
-* No import of codes allowed, we have to support him in Make in India.<br/>
-* No comments allowed in code, everything should be clean as per Swachh Bharat Abhiyaan. <br/>
-* No redundant variables allowed, less government more governance. <br/>
+* No import of code is allowed, we have to support him in Make in India.<br/>
+* No comments are allowed in code, everything should be clean as per Swachh Bharat Abhiyaan. <br/>
+* No redundant variables allowed, 'less government more governance.' <br/>
 * Like his speeches, all codes should start with <strong>mitrooon</strong> <br/>
 * All codes should end with <strong>acche din aa gaye</strong>, otherwise it's congress rule error.<br/>
 * The programming language is totally case insensitive, because we should not believe discrimination based on higher or lower castes/cases. <br/>
 * No floating point numbers allowed, you can either be right front or left front, there is no mid-way.<br/>
-* you can provide --help flag for very discreet help.
+* you can use the --help flag for very discreet help.
 
 
 ## Installation
@@ -33,7 +33,7 @@ Write code in file with extension <strong>.chai</strong><br/>
 For execution type MODI filename.chai <br/>
 
 ## Syntax and Grammar
-Arithmetic, relational and logical operators can be used in their raw form as defined in c/c++ (i.e. '+' for addition '-' for subtraction '&&' for logocal and '||' for logical or and so on..) <br/>
+Arithmetic, relational and logical operators can be used in their raw form as defined in c/c++ (i.e. '+' for addition '-' for subtraction '&&' for logical and '||' for logical or and so on..) <br/>
 <strong>Modi-fied operators</strong><br/>
 * `sach` for True <br/>
 * `jhoot` for False <br/>
@@ -46,7 +46,7 @@ Arithmetic, relational and logical operators can be used in their raw form as de
 * `zyada` for greater than <br/>
 * `barabar` for equal to <br/>
 * `aur` for logical AND <br/>
-* `ya` for logocal OR <br/>
+* `ya` for logical OR <br/>
 
 ## Flow of Control
 * <strong> { } </strong> define a block as in any other programming language. <br/>
