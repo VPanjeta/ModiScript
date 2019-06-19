@@ -2,16 +2,16 @@
 Acche din aa gaye
 ## Vision 
 A Programming language is a wonderful medium of communication between man and machine. Many such languages are created, keeping in mind the comfort of the programmer. Such languages fulfill the computational needs of the world and serve their purpose. Somewhere in the midst of all this, the “fun” side of programming is lost. <br/>
-Our project, “Modi Script” is one such esoteric language created with the sole intention of making use of quotes  by our beloved PM Narendra Modi. The star feature of this language is that the language consists entirely of remarkable statements made by the PM. The language is  dynamically typed and  turing complete, sprinkled with words of wisdom by our PM! <br/>
+Our project, “Modi Script” is one such esoteric language created with the sole intention of making use of quotes by our beloved PM Narendra Modi. The star feature of this language is that the language consists entirely of remarkable statements made by the PM. The language is dynamically typed and turing complete, sprinkled with words of wisdom by our PM! <br/>
 
 ## Features
-This scripting languague includes some "ideas" of Shri Narendra Modi. <br/>
+This scripting language includes some "ideas" of Shri Narendra Modi. <br/>
 * No import of code is allowed, we have to support him in Make in India.<br/>
 * No comments are allowed in code, everything should be clean as per Swachh Bharat Abhiyaan. <br/>
 * No redundant variables allowed, 'less government more governance.' <br/>
 * Like his speeches, all codes should start with <strong>mitrooon</strong> <br/>
 * All codes should end with <strong>acche din aa gaye</strong>, otherwise it's congress rule error.<br/>
-* The programming language is totally case insensitive, because we should not believe discrimination based on higher or lower castes/cases. <br/>
+* The programming language is totally case insensitive because we should not believe discrimination based on higher or lower castes/cases. <br/>
 * No floating point numbers allowed, you can either be right front or left front, there is no mid-way.<br/>
 * you can use the --help flag for very discreet help.
 
@@ -55,8 +55,8 @@ Arithmetic, relational and logical operators can be used in their raw form as de
 
 ## General Syntax 
 * Any quote in double or single inverted commas is taken as a string constant. eg "Modiji ka seena 56 inch ka hai". <br/>
-* Assignments to a varibale can be done using hai keyword, x = y can be depicted as x y hai, or <strong>congress scamster hai </strong>. <br/>
-* The use of word "hai" is optional so the statement can be defined as <strong>BJP winner </strong> which translates to BJP = winner and hai can be appended to end of any line to make it more grammarly suitable to hindi. <br/>
+* Assignments to a variable can be done using hai keyword, x = y can be depicted as x y hai, or <strong>congress scamster hai </strong>. <br/>
+* The use of the word "hai" is optional so the statement can be defined as <strong>BJP winner </strong> which translates to BJP = winner and hai can be appended to end of any line to make it more grammarly suitable to hindi. <br/>
 * Output to STDOUT can be given using <strong>bhaiyo aur behno</strong>. bhaiyo aur behno "Hum UP me sarkaar bana chuke hai." will print "Hum UP me sarkaar bana chuke hai." <br/>
 * Input from STDIN can be takes using <strong>mann ki baat</strong>. mann ki baat RSS will take input into a variable named RSS. <br/>
 * Any excessive words defined in a line outside the scope of any operators or syntax will be neglected so you can write pure hindi codes and make them grammatically correct and give a pure Hindi Code demo in UN Assembly. <br/>  
@@ -65,9 +65,9 @@ Arithmetic, relational and logical operators can be used in their raw form as de
 ```
 Mitrooon
 agar baat sach hai
-	bhaiyo aur behno "Modi sabse achhe pradhan mantri hai." 
+    bhaiyo aur behno "Modi sabse achhe pradhan mantri hai." 
 nahi toh 
-	bhaiyo aur behno "Rahul Gandhi ko PM banaiye" 
+    bhaiyo aur behno "Rahul Gandhi ko PM banaiye" 
 Achhe din aa gaye 
 ```
 <br/>
@@ -82,4 +82,4 @@ Ideas and Contributions for alpha version implemented by <br/>
 * Tilak S Naik [@TilakSN](https://github.com/TilakSN) <br/>
 * Shishira R Maiya [@abhyantrika](https://github.com/abhyantrika) <br/>
 
-* You are welcome, if you feel the need to contribute. Just clone the repo and send a pull request!
+* You are welcome if you feel the need to contribute. Just clone the repo and send a pull request!
