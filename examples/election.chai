@@ -1,0 +1,35 @@
+mitrooon
+bhaiyo aur behno "lok sabha elections"
+bhaiyo aur behno "1 dabaiye BJP ke liye"
+bhaiyo aur behno "2 dabaiye INC le liye"
+bhaiyo aur behno "0 dabaiye result le liye"
+bhaiyo aur behno "Apna vote dijiye"
+BJPvotes 0 hai
+INCvotes 0 hai
+mann ki baat nambar
+jab tak nambar barabar 0 hai{
+    agar nambar barabar 1 hai{
+        BJPvotes BJPvotes + 1 hai
+    }
+    nahi toh agar nambar barabar 2 hai{
+        INCvotes INCvotes + 1 hai
+    }
+    nahi toh{
+        bhaiyo aur behno "galat button dabaya"
+    }
+    bhaiyo aur behno "Apna vote dijiye"
+    mann ki baat nambar
+}
+
+agar BJPvotes INCvotes se zyada{
+    bhaiyo aur behno "sarkar bjp ki banegi"
+    bhaiyo aur behno "acche din aa gaye"
+}
+nahi toh agar INCvotes BJPvotes se zyada{
+    bhaiyo aur behno "sarker inc ki banegi"
+    bhaiyo aur behno "acche din abhi door hai"
+}
+nahi toh{
+    bhaiyo aur behno "re elections honge"
+}
+acche din aa gaye
