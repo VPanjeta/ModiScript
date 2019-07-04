@@ -19,13 +19,20 @@ class Parser:
     def _debug_details(self, num):
         if isinstance(num, dict):
             return {'lineno': num['line'], 'col_offset': num['offset']}
-        return {'lineno': self.lex[num]['line'], 'col_offset': self.lex[num]['offset']}
+        return {'lineno': self.lex[num]['line'],
+                'col_offset': self.lex[num]['offset']}
 
     def _load_var(self, num):
-        return Name(id=self.lex[num]['value'], ctx=Load(), **self._debug_details(num))
+        return Name(
+            id=self.lex[num]['value'],
+            ctx=Load(),
+            **self._debug_details(num))
 
     def _store_var(self, num):
-        return Name(id=self.lex[num]['value'], ctx=Store(), **self._debug_details(num))
+        return Name(
+            id=self.lex[num]['value'],
+            ctx=Store(),
+            **self._debug_details(num))
 
     def _is_not(self, lex):
         if isinstance(lex, int):
@@ -68,8 +75,14 @@ class Parser:
         return num + 1, None
 
     def _analyze_input(self, num):
-        input_func = Call(func=Name(id='input', ctx=Load(), **self._debug_details(num)),
-                          args=[], keywords=[], **self._debug_details(num))
+        input_func = Call(
+            func=Name(
+                id='input',
+                ctx=Load(),
+                **self._debug_details(num)),
+            args=[],
+            keywords=[],
+            **self._debug_details(num))
         num += 1
         if num < self.length:
             lexeme = self.lex[num]
@@ -79,8 +92,14 @@ class Parser:
             elif lexeme['lex'] != LEX['var']:
                 return num, None
             else:
-                input_func = Call(func=Name(id='int', ctx=Load(), **self._debug_details(num)),
-                                  args=[input_func], keywords=[], **self._debug_details(num))
+                input_func = Call(
+                    func=Name(
+                        id='int',
+                        ctx=Load(),
+                        **self._debug_details(num)),
+                    args=[input_func],
+                    keywords=[],
+                    **self._debug_details(num))
             self._variables.add(lexeme['value'])
             return num + 1, Assign(targets=[self._store_var(num)],
                                    value=input_func, **self._debug_details(num))
@@ -113,7 +132,8 @@ class Parser:
                                     orelse = [orelse]
                     if orelse is None:
                         orelse = []
-                    return new_num, If(test=cond, body=body, orelse=orelse, **self._debug_details(num))
+                    return new_num, If(
+                        test=cond, body=body, orelse=orelse, **self._debug_details(num))
         raise ErrorHandler(ERROR, "If failed")
 
     def _analyze_print(self, num):
@@ -121,8 +141,8 @@ class Parser:
             return num + 1, None
         new_num, node = self._analyze_expr(num + 1)
         if node is not None:
-            return new_num, Expr(value=Call(func=Name(id='print', ctx=Load()),
-                                            args=[node], keywords=[]), **self._debug_details(num))
+            return new_num, Expr(value=Call(func=Name(id='print', ctx=Load()), args=[
+                                 node], keywords=[]), **self._debug_details(num))
         return num + 1, None
 
     def _analyze_until(self, num):
@@ -140,8 +160,10 @@ class Parser:
                     if body is not None:
                         body = [body]
                 if body is not None:
-                    return new_num, While(test=UnaryOp(op=Not(), operand=cond, **self._debug_details(num + 1)),
-                                          body=body, orelse=[], **self._debug_details(num))
+                    return new_num, While(
+                        test=UnaryOp(
+                            op=Not(), operand=cond, **self._debug_details(
+                                num + 1)), body=body, orelse=[], **self._debug_details(num))
         raise ErrorHandler(ERROR, "Misplaced jab tak")
 
     def _analyze_block(self, num):
@@ -170,21 +192,35 @@ class Parser:
                 new_num += 1
             return new_num, code
         if lexeme['lex'] == LEX['true']:
-            k = 2 if (num + 1 < self.length and self.lex[num + 1]['lex'] == LEX['hai']) else 1
-            return num + k, NameConstant(value=True, **self._debug_details(num))
+            k = 2 if (num +
+                      1 < self.length and self.lex[num +
+                                                   1]['lex'] == LEX['hai']) else 1
+            return num + k, NameConstant(value=True,
+                                         **self._debug_details(num))
         if lexeme['lex'] == LEX['false']:
-            k = 2 if (num + 1 < self.length and self.lex[num + 1]['lex'] == LEX['hai']) else 1
-            return num + k, NameConstant(value=False, **self._debug_details(num))
+            k = 2 if (num +
+                      1 < self.length and self.lex[num +
+                                                   1]['lex'] == LEX['hai']) else 1
+            return num + \
+                k, NameConstant(value=False, **self._debug_details(num))
         if lexeme['lex'] == LEX['num']:
-            k = 2 if (num + 1 < self.length and self.lex[num + 1]['lex'] == LEX['hai']) else 1
-            return num + k, Num(n=int(lexeme['value']), **self._debug_details(num))
+            k = 2 if (num +
+                      1 < self.length and self.lex[num +
+                                                   1]['lex'] == LEX['hai']) else 1
+            return num + \
+                k, Num(n=int(lexeme['value']), **self._debug_details(num))
         if lexeme['lex'] == LEX['str']:
-            k = 2 if (num + 1 < self.length and self.lex[num + 1]['lex'] == LEX['hai']) else 1
+            k = 2 if (num +
+                      1 < self.length and self.lex[num +
+                                                   1]['lex'] == LEX['hai']) else 1
             return num + k, Str(s=lexeme['value'], **self._debug_details(num))
         if lexeme['lex'] == LEX['var']:
             if lexeme['value'] in self._variables:
-                k = 2 if (num + 1 < self.length and self.lex[num + 1]['lex'] == LEX['hai']) else 1
-                return num + k, Name(id=lexeme['value'], ctx=Load(), **self._debug_details(num))
+                k = 2 if (num +
+                          1 < self.length and self.lex[num +
+                                                       1]['lex'] == LEX['hai']) else 1
+                return num + \
+                    k, Name(id=lexeme['value'], ctx=Load(), **self._debug_details(num))
             if num + 1 >= self.length:
                 return num + 1, None
             return self._analyze_e(num + 1)
@@ -243,7 +279,13 @@ class Parser:
         if num >= self.length:
             return num, prev
         lexeme = self.lex[num]
-        if lexeme['lex'] in (LEX['<'], LEX['>'], LEX['<='], LEX['>='], LEX['=='], LEX['!=']):
+        if lexeme['lex'] in (
+                LEX['<'],
+                LEX['>'],
+                LEX['<='],
+                LEX['>='],
+                LEX['=='],
+                LEX['!=']):
             if num + 1 >= self.length:
                 return num + 1, prev
             new_num, node = self._analyze_c(num + 1)
@@ -266,11 +308,18 @@ class Parser:
                     op = Lt(**self._debug_details(num))
                 elif lexeme['lex'] == LEX['<']:
                     op = Gt(**self._debug_details(num))
-            op = Compare(left=prev, ops=[op], comparators=[node], **self._debug_details(num))
+            op = Compare(
+                left=prev,
+                ops=[op],
+                comparators=[node],
+                **self._debug_details(num))
             if new_num + 1 < self.length and self.lex[new_num + 1]['lex'] == LEX['var'] and self.lex[new_num + 1][
-                'value'] == 'nahi':
+                    'value'] == 'nahi':
                 new_num += 1
-                op = UnaryOp(op=Not(), operand=op, **self._debug_details(new_num))
+                op = UnaryOp(
+                    op=Not(),
+                    operand=op,
+                    **self._debug_details(new_num))
             if new_num < self.length and self.lex[new_num]['lex'] == LEX['hai']:
                 new_num += 1
             return new_num, op
@@ -293,12 +342,20 @@ class Parser:
                 op = Eq(**self._debug_details(new_num))
             elif lexeme['lex'] == LEX['!=']:
                 op = NotEq(**self._debug_details(new_num))
-            op = Compare(left=prev, ops=[op], comparators=[node], **self._debug_details(num))
+            op = Compare(
+                left=prev,
+                ops=[op],
+                comparators=[node],
+                **self._debug_details(num))
             if new_num + 1 < self.length and self.lex[new_num + 1]['lex'] == LEX['var'] and self.lex[new_num + 1][
-                'value'] == 'nahi':
+                    'value'] == 'nahi':
                 new_num += 1
-                op = UnaryOp(op=Not(), operand=op, **self._debug_details(new_num))
-            if new_num + 1 < self.length and self.lex[new_num + 1]['lex'] == LEX['hai']:
+                op = UnaryOp(
+                    op=Not(),
+                    operand=op,
+                    **self._debug_details(new_num))
+            if new_num + \
+                    1 < self.length and self.lex[new_num + 1]['lex'] == LEX['hai']:
                 new_num += 1
             return new_num + 1, op
         else:
@@ -325,7 +382,9 @@ class Parser:
         if len(values) == 1:
             return num, values.pop()
         else:
-            return num, BoolOp(op=And(**self._debug_details(lex_num)), values=values, **self._debug_details(lex_num))
+            return num, BoolOp(
+                op=And(
+                    **self._debug_details(lex_num)), values=values, **self._debug_details(lex_num))
 
     def _analyze_expr(self, num):
         """
@@ -358,4 +417,5 @@ class Parser:
         if len(values) == 1:
             return num, values.pop()
         else:
-            return num, BoolOp(op=Or(**self._debug_details(lex_num)), values=values, **self._debug_details(lex_num))
+            return num, BoolOp(op=Or(**self._debug_details(lex_num)),
+                               values=values, **self._debug_details(lex_num))

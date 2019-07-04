@@ -93,7 +93,8 @@ class Lexer:
                 elif line[offset].isspace():
                     offset += 1
                 elif line[offset: offset + 2] in ('==', '&&', '||', '<=', '>=', '!='):
-                    self._push(LEX[line[offset: offset + 2]], None, num, offset)
+                    self._push(LEX[line[offset: offset + 2]],
+                               None, num, offset)
                     offset += 2
                 elif line[offset] in '+-*/%(){}=<>!':
                     self._push(LEX[line[offset]], None, num, offset)
