@@ -1,0 +1,23 @@
+mitroon
+
+bhaiyo aur behno "bhaiyo aur behno, Congress toh nahi kar paayi"
+bhaiyo aur behno "lekin main aapko sanskaari(prime) numbers k baare main bata sakta hun"
+
+mann ki baat number
+i 2 hai
+sanskaar sach hai
+
+jab tak i kam number - 1 hai {
+    agar number modi i barabar 0 hai {
+        sanskaar jhoot hai
+    }
+    i i plus 1 hai
+}
+
+agar sanskaar barabar sach hai {
+    bhaiyo aur behno "ye sanskaari h"
+} nahi toh {
+    bhaiyo aur behno "ye sanskaari nahi h"
+}
+
+achhe din aa gaye
