@@ -1,0 +1,18 @@
+mitrooon
+
+bhaiyo aur behno "kitne namber dikhane h"
+mann ki baat namber
+
+PehlaNamber 1 hai
+DusraNamber 1 hai
+TeesraNamber 1 hai
+
+i 1 hai
+
+jab tak i namber se kam h {
+    bhaiyo aur behno DusraNamber
+    TeesraNamber PehlaNamber + DusraNamber hai
+    PehlaNamber DusraNamber hai
+    DusraNamber TeesraNamber hai
+  i i + 1 hai
+}
