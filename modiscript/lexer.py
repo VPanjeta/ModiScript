@@ -10,10 +10,13 @@ jhoot = re.compile(r'^jh?(oo|u)t$')
 
 
 class Lexer:
-    def __init__(self, filename):
+    def __init__(self, value, valueType="filename"):
         self.contents = []
-        with open(filename) as f:
-            self.contents = list(map(lambda x: x.lower(), f.readlines()))
+        if valueType == "filename":
+            with open(value) as f:
+                self.contents = list(map(lambda x: x.lower(), f.readlines()))
+        else:
+            self.contents = value.lower().split("\n")
         self.stack = []
         self.clear = False
 
