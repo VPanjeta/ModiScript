@@ -1,6 +1,6 @@
 # ModiScript
 Acche din aa gaye
-## Vision 
+## Vision
 A Programming language is a wonderful medium of communication between man and machine. Many such languages are created, keeping in mind the comfort of the programmer. Such languages fulfill the computational needs of the world and serve their purpose. Somewhere in the midst of all this, the “fun” side of programming is lost. <br/>
 Our project, “Modi Script” is one such esoteric language created with the sole intention of making use of quotes by our beloved PM Narendra Modi. The star feature of this language is that the language consists entirely of remarkable statements made by the PM. The language is dynamically typed and turing complete, sprinkled with words of wisdom by our PM! <br/>
 
@@ -22,9 +22,9 @@ To install, download the repo using: <br/>
 git clone https://github.com/VPanjeta/ModiScript
 ```
 Then add ModiScript to your PATH as:<br/>
-1. Temporary: Write `export PATH=$PATH:/path/to/ModiScript/modiscript` to terminal. <br/>
-2. Permanent: Append `export PATH=$PATH:/path/to/ModiScript/modiscript` to the end of your `~/.bashrc` file.<br/>
-And then type 
+1. Temporary: Write `export PATH=$PATH:/path/to/ModiScript` to terminal. <br/>
+2. Permanent: Append `export PATH=$PATH:/path/to/ModiScript` to the end of your `~/.bashrc` file.<br/>
+And then type
 ```bash
 source ~/.bashrc
 ```
@@ -38,7 +38,7 @@ Arithmetic, relational and logical operators can be used in their raw form as de
 * `sach` for True <br/>
 * `jhoot` for False <br/>
 * `plus` for addition <br/>
-* `substract` for subtraction <br/> 
+* `substract` for subtraction <br/>
 * `taimes` for multiplication <br/>
 * `break` for division <br/>
 * `modi` for mod <br/>
@@ -53,22 +53,22 @@ Arithmetic, relational and logical operators can be used in their raw form as de
 * if is defined as <strong>agar</strong> and else as <strong>nahi toh</strong>. if else ladder can be defined as <strong>agar (condition) { } nahi toh agar (condition) { } nahi toh{ }</strong>.
 * Looping constructs can be defined using <strong>jab tak condition hai { } </strong> (be careful here, we have been going according to hindi grammar that dictates the loop will exit when the condition is true, thus the loop executes till the condition is false not true) <br/>
 
-## General Syntax 
+## General Syntax
 * Any quote in double or single inverted commas is taken as a string constant. eg "Modiji ka seena 56 inch ka hai". <br/>
 * Assignments to a variable can be done using hai keyword, x = y can be depicted as x y hai, or <strong>congress scamster hai </strong>. <br/>
 * The use of the word "hai" is optional so the statement can be defined as <strong>BJP winner </strong> which translates to BJP = winner and hai can be appended to end of any line to make it more grammarly suitable to hindi. <br/>
 * Output to STDOUT can be given using <strong>bhaiyo aur behno</strong>. bhaiyo aur behno "Hum UP me sarkaar bana chuke hai." will print "Hum UP me sarkaar bana chuke hai." <br/>
 * Input from STDIN can be takes using <strong>mann ki baat</strong>. mann ki baat RSS will take input into a variable named RSS. <br/>
-* Any excessive words defined in a line outside the scope of any operators or syntax will be neglected so you can write pure hindi codes and make them grammatically correct and give a pure Hindi Code demo in UN Assembly. <br/>  
+* Any excessive words defined in a line outside the scope of any operators or syntax will be neglected so you can write pure hindi codes and make them grammatically correct and give a pure Hindi Code demo in UN Assembly. <br/>
 
 ## Example Code
 ```
 Mitrooon
 agar baat sach hai
-    bhaiyo aur behno "Modi sabse achhe pradhan mantri hai." 
-nahi toh 
-    bhaiyo aur behno "Rahul Gandhi ko PM banaiye" 
-Achhe din aa gaye 
+    bhaiyo aur behno "Modi sabse achhe pradhan mantri hai."
+nahi toh
+    bhaiyo aur behno "Rahul Gandhi ko PM banaiye"
+Achhe din aa gaye
 ```
 <br/>
 <strong>Output:</strong>

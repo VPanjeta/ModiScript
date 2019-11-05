@@ -1,8 +1,8 @@
 #!/usr/bin/env python3
 import os
 import sys
-from utils import ErrorHandler, FNF, usage
-from api import Api
+from modiscript.utils import ErrorHandler, FNF, usage
+from modiscript.api import ModiScript
 DEBUG = False
 
 def main():
@@ -19,8 +19,8 @@ def main():
     if not os.path.isfile(filename):
         raise ErrorHandler(FNF, filename)
     # execute
-    api = Api(DEBUG)
-    api.execute(filename)
+    ms = ModiScript(DEBUG)
+    ms.execute(filename)
 
 
 if __name__ == '__main__':

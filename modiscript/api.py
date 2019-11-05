@@ -1,8 +1,8 @@
-from lexer import Lexer
-from parser import Parser
+from .lexer import Lexer
+from .parser import Parser
 
 
-class Api:
+class ModiScript:
     def __init__(self, debug=False):
         self.debug = debug
 
