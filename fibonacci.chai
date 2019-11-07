@@ -9,10 +9,11 @@ TeesraNamber 1 hai
 
 i 1 hai
 
-jab tak i namber se kam h {
+jab tak i namber se zyada hai {
     bhaiyo aur behno DusraNamber
     TeesraNamber PehlaNamber + DusraNamber hai
     PehlaNamber DusraNamber hai
     DusraNamber TeesraNamber hai
   i i + 1 hai
 }
+Achhe din aa gaye
