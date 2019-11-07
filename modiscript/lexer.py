@@ -1,4 +1,4 @@
-from .utils import LEX, ErrorHandler, ERROR, CONGRESS_RULE, STARTING_TROUBLE, MISQUOTE, WORDS
+from utils import LEX, ErrorHandler, ERROR, CONGRESS_RULE, STARTING_TROUBLE, MISQUOTE, WORDS
 import re
 import sys
 

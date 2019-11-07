@@ -22,8 +22,8 @@ To install, download the repo using: <br/>
 git clone https://github.com/VPanjeta/ModiScript
 ```
 Then add ModiScript to your PATH as:<br/>
-1. Temporary: Write `export PATH=$PATH:/path/to/ModiScript` to terminal. <br/>
-2. Permanent: Append `export PATH=$PATH:/path/to/ModiScript` to the end of your `~/.bashrc` file.<br/>
+1. Temporary: Write `export PATH=$PATH:/path/to/ModiScript/modiscript` to terminal. <br/>
+2. Permanent: Append `export PATH=$PATH:/path/to/ModiScript/modiscript` to the end of your `~/.bashrc` file.<br/>
 And then type
 ```bash
 source ~/.bashrc
