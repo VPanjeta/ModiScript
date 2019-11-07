@@ -1,11 +1,12 @@
 import sys
-from flask import Flask, request, jsonify
-from flask_cors import CORS
-from modiscript.api import ModiScript
-from modiscript.utils import ErrorHandler
+sys.path.append("..")
 from io import StringIO
-app = Flask(__name__)
+from modiscript.utils import ErrorHandler
+from modiscript.api import ModiScript
+from flask_cors import CORS
+from flask import Flask, request, jsonify
 
+app = Flask(__name__)
 CORS(app, resources={r"/*": {"origins": "*"}})
 
 ms = ModiScript()
