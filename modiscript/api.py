@@ -1,5 +1,5 @@
-from lexer import Lexer
-from parser import Parser
+from .lexer import Lexer
+from .parser import Parser
 
 
 class ModiScript:
