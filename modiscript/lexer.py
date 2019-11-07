@@ -1,4 +1,4 @@
-from utils import LEX, ErrorHandler, ERROR, CONGRESS_RULE, STARTING_TROUBLE, MISQUOTE, WORDS
+from .utils import LEX, ErrorHandler, ERROR, CONGRESS_RULE, STARTING_TROUBLE, MISQUOTE, WORDS
 import re
 import sys
 
@@ -10,10 +10,13 @@ jhoot = re.compile(r'^jh?(oo|u)t$')
 
 
 class Lexer:
-    def __init__(self, filename):
+    def __init__(self, value, value_type="filename"):
         self.contents = []
-        with open(filename) as f:
-            self.contents = list(map(lambda x: x.lower(), f.readlines()))
+        if value_type == "filename":
+            with open(value) as f:
+                self.contents = list(map(lambda x: x.lower(), f.readlines()))
+        else:
+            self.contents = value.lower().split("\n")
         self.stack = []
         self.clear = False
 
