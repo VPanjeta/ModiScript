@@ -48,15 +48,10 @@
 
     </v-row>
     <p class="headline">
-      ModiScript created By 
+      Created By The 
       <a href="https://github.com/VPanjeta/ModiScript">
-        Vishal Pajenta
+        ModiScript Team 
       </a>.
-     WebUI by 
-    <a href="https://dak.sh">
-     Daksh Miglani
-    </a>
-    .
     </p>
   </v-container>
 </template>
