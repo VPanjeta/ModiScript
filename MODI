@@ -1,0 +1,34 @@
+#!/usr/bin/env python3
+
+import os
+import sys
+
+from modiscript.api import ModiScript
+from modiscript.utils import ErrorHandler, FNF, usage
+
+DEBUG = False
+
+
+def main():
+    if len(sys.argv) < 2 or '-h' in sys.argv or '--help' in sys.argv:
+        usage()
+
+    filename = sys.argv[-1]
+    # filename = "modi.chai"
+    if '-d' in sys.argv or '--debug' in sys.argv:
+        global DEBUG
+        DEBUG = True
+
+    # check existence
+    if not os.path.isfile(filename):
+        raise ErrorHandler(FNF, filename)
+    # execute
+    ms = ModiScript(DEBUG)
+    ms.execute(filename)
+
+
+if __name__ == '__main__':
+    try:
+        main()
+    except ErrorHandler as e:
+        print(e)

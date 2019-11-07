@@ -1,0 +1,9 @@
+{
+	"version": 2,
+	"builds": [
+		{ "src": "website/web.py", "use": "@now/python" }
+	],
+	"routes": [
+		{ "src": "/(.*)", "dest": "website/web.py" }
+	]
+}

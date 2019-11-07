@@ -1,5 +1,5 @@
 from ast import *
-from utils import LEX, ErrorHandler, ERROR, CONGRESS_RULE
+from .utils import LEX, ErrorHandler, ERROR, CONGRESS_RULE
 
 
 class Parser:
