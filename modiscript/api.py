@@ -8,11 +8,12 @@ class ModiScript:
 
     def _compile_file(self, value, value_type="filename"):
         lex_out = Lexer(value, value_type).analyze()
-        if self.debug:
+        if self.debug and value_type == "filename":
+            filename = value
             with open(filename.split('.', 1)[0] + ".txt", "w") as f:
                 print(*lex_out, sep='\n', file=f)
         parse_out = Parser(lex_out).parse()
-        if self.debug:
+        if self.debug and value_type == "filename":
             with open(filename.split('.', 1)[0] + ".py", "w") as f:
                 import ast
                 print(ast.dump(parse_out), file=f)
