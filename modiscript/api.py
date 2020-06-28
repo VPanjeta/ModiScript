@@ -8,7 +8,7 @@ class ModiScript:
 
     def _compile_file(self, value, value_type="filename"):
         lex_out = Lexer(value, value_type).analyze()
-        if self.debug and value_type="filename":
+        if self.debug and value_type == "filename":
             filename = value
             with open(filename.split('.', 1)[0] + ".txt", "w") as f:
                 print(*lex_out, sep='\n', file=f)
