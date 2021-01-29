@@ -12,7 +12,7 @@ jab tak nambar barabar 0 hai{
         BJPvotes BJPvotes + 1 hai
     }
     nahi toh agar nambar barabar 2 hai{
-        INCvotes INCvotes + 1 hai
+        BJPvotes BJPvotes + 1 hai
     }
     nahi toh{
         bhaiyo aur behno "galat button dabaya"
