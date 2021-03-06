@@ -60,7 +60,7 @@ Arithmetic, relational and logical operators can be used in their raw form as de
 * Assignments to a variable can be done using hai keyword, x = y can be depicted as x y hai, or <strong>congress scamster hai </strong>. <br/>
 * The use of the word "hai" is optional so the statement can be defined as <strong>BJP winner </strong> which translates to BJP = winner and hai can be appended to end of any line to make it more grammarly suitable to hindi. <br/>
 * Output to STDOUT can be given using <strong>bhaiyo aur behno</strong>. bhaiyo aur behno "Hum UP me sarkaar bana chuke hai." will print "Hum UP me sarkaar bana chuke hai." <br/>
-* Input from STDIN can be takes using <strong>mann ki baat</strong>. mann ki baat RSS will take input into a variable named RSS. <br/>
+* Input from STDIN can be taken using <strong>mann ki baat</strong>. mann ki baat RSS will take input into a variable named RSS. <br/>
 * Any excessive words defined in a line outside the scope of any operators or syntax will be neglected so you can write pure hindi codes and make them grammatically correct and give a pure Hindi Code demo in UN Assembly. <br/>
 
 ## Example Code
