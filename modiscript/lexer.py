@@ -88,12 +88,12 @@ class Lexer:
             offset = 0
             length = len(line)
             while offset < length:
+                curr = line[offset]
                 if self.clear:
                     for lex in self.stack:
                         yield Lexer.lexeme(*lex)
                     self.stack = []
                     self.clear = False
-                curr = line[offset]
                 elif curr.isspace():
                     offset += 1
                 elif line[offset: offset + 2] in ('==', '&&', '||', '<=', '>=', '!='):
