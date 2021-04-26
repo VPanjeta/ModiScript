@@ -93,15 +93,16 @@ class Lexer:
                         yield Lexer.lexeme(*lex)
                     self.stack = []
                     self.clear = False
-                elif line[offset].isspace():
+                curr = line[offset]
+                elif curr.isspace():
                     offset += 1
                 elif line[offset: offset + 2] in ('==', '&&', '||', '<=', '>=', '!='):
                     self._push(LEX[line[offset: offset + 2]], None, num, offset)
                     offset += 2
-                elif line[offset] in '+-*/%(){}=<>!':
+                elif curr in '+-*/%(){}=<>!':
                     self._push(LEX[line[offset]], None, num, offset)
                     offset += 1
-                elif line[offset].isdigit():
+                elif curr.isdigit():
                     n = ''
                     o = offset
                     while o < length and line[o].isdigit():
@@ -109,7 +110,7 @@ class Lexer:
                         o += 1
                     self._push(LEX['num'], int(n), num, offset)
                     offset = o
-                elif line[offset].isalpha():
+                elif curr.isalpha():
                     w = ''
                     o = offset
                     while o < length and line[o].isalpha():
@@ -167,7 +168,7 @@ class Lexer:
                         self._push(LEX['var'], w, num, offset)
                         self.clear = False
                     offset = o
-                elif line[offset] == '"' or line[offset] == "'":
+                elif curr == '"' or line[offset] == "'":
                     w = ''
                     o = offset + 1
                     while o < length and line[o] != line[offset]:
