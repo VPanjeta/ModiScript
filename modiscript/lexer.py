@@ -88,20 +88,21 @@ class Lexer:
             offset = 0
             length = len(line)
             while offset < length:
+                token = line[offset]
                 if self.clear:
                     for lex in self.stack:
                         yield Lexer.lexeme(*lex)
                     self.stack = []
                     self.clear = False
-                elif line[offset].isspace():
+                elif token.isspace():
                     offset += 1
                 elif line[offset: offset + 2] in ('==', '&&', '||', '<=', '>=', '!='):
                     self._push(LEX[line[offset: offset + 2]], None, num, offset)
                     offset += 2
-                elif line[offset] in '+-*/%(){}=<>!':
-                    self._push(LEX[line[offset]], None, num, offset)
+                elif token in '+-*/%(){}=<>!':
+                    self._push(LEX[token], None, num, offset)
                     offset += 1
-                elif line[offset].isdigit():
+                elif token.isdigit():
                     n = ''
                     o = offset
                     while o < length and line[o].isdigit():
@@ -109,7 +110,7 @@ class Lexer:
                         o += 1
                     self._push(LEX['num'], int(n), num, offset)
                     offset = o
-                elif line[offset].isalpha():
+                elif token.isalpha():
                     w = ''
                     o = offset
                     while o < length and line[o].isalpha():
@@ -167,10 +168,10 @@ class Lexer:
                         self._push(LEX['var'], w, num, offset)
                         self.clear = False
                     offset = o
-                elif line[offset] == '"' or line[offset] == "'":
+                elif token == '"' or token == "'":
                     w = ''
                     o = offset + 1
-                    while o < length and line[o] != line[offset]:
+                    while o < length and line[o] != token:
                         if line[o] == '\\':
                             o += 1
                         w += line[o]
