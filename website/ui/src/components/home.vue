@@ -25,6 +25,7 @@
           name="input-7-4"
           label="Code"
           v-model="code"
+          class="monospace"
         ></v-textarea>
       </v-col>
       <v-col class="d-flex" cols="12">
@@ -33,6 +34,7 @@
           name="input-7-4"
           label="Input (STDIN)"
           v-model="stdin"
+          class="monospace"
         ></v-textarea>
       </v-col>
 
